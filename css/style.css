@@ -1,0 +1,132 @@
+/*
+TITLE :: MEMORY;
+BY :: Bilane ABDI DJAMA;
+*/
+
+
+/* --- TABLE DES MATIERES
+
+-- 01.GENERAL
+-- 02.ITEMS
+
+
+
+--- */
+
+
+/*--01.GENERAL--*/
+
+body
+{
+	background-color: #223645;
+	color: whitesmoke;
+}
+
+.container
+{
+	width: 60%;
+	margin: 50px auto;
+
+}
+
+
+/*--02.ITEMS--*/
+
+.items
+{	
+	font-size: 23px;
+	text-align: center;
+	margin-top: 20px;
+	display: flex;
+	height: auto;
+}
+
+.item1
+{
+	height: auto;
+	width: 25%;
+	background-color: whitesmoke;
+	border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.item2
+{
+	height: auto;
+	width: 25%;
+	background-color: whitesmoke;
+	border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.item3
+{
+	height: auto;
+	width: 25%;
+	background-color: whitesmoke;
+	border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.item4
+{
+	height: auto;
+	width: 25%;
+	background-color: whitesmoke;
+	border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.item5
+{
+	height: auto;
+	width: 25%;
+	background-color: whitesmoke;
+	border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.item6
+{
+	height: auto;
+	width: 25%;
+	background-color: whitesmoke;
+	border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.item7
+{
+	height: auto;
+	width: 25%;
+	background-color: whitesmoke;
+	border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.item8
+{
+	height: auto;
+	width: 25%;
+	background-color: whitesmoke;
+	border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+img 
+{
+	visibility: hidden;
+}
+
+
+
+
+

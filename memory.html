@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="items">
+            <div class="item1" onclick="clic(1);"><img src="img/facebook.png" alt="Fb icon"></div>
+            <div class="item2" onclick="clic(2);"><img src="img/twitter.png" alt="Tt icon"></div>
+            <div class="item3" onclick="clic(3);"><img src="img/instagram.png" alt="Inst icon"></div>
+            <div class="item4" onclick="clic(4);"><img src="img/tumblr.png" alt="Tb icon"></div>
+        </div>
+
+        <div class="items">
+            <div class="item5" onclick="clic(5);"><img src="img/google-plus.png" alt=" Gp icon"></div>
+            <div class="item6" onclick="clic(6);"><img src="img/pinterest.png" alt=" Pint icon"></div>
+            <div class="item7" onclick="clic(7);"><img src="img/linkedin.png" alt=" Link icon"></div>
+            <div class="item8" onclick="clic(8);"><img src="img/vk.png" alt=" Vk icon"></div>
+        </div>
+
+         <div class="items">
+            <div class="item1" onclick="clic(9);"><img src="img/facebook.png" alt="Fb icon"></div>
+            <div class="item2" onclick="clic(10);"><img src="img/twitter.png" alt="Tt icon"></div>
+            <div class="item3" onclick="clic(11);"><img src="img/instagram.png" alt="Inst icon"></div>
+            <div class="item4" onclick="clic(12);"><img src="img/tumblr.png" alt="Tb icon"></div>
+        </div>
+
+        <div class="items">
+            <div class="item5" onclick="clic(13);"><img src="img/google-plus.png" alt=" Gp icon"></div>
+            <div class="item6" onclick="clic(14);"><img src="img/pinterest.png" alt=" Pint icon"></div>
+            <div class="item7" onclick="clic(15);"><img src="img/linkedin.png" alt=" Link icon"></div>
+            <div class="item8" onclick="clic(16);"><img src="img/vk.png" alt=" Vk icon"></div>
+        </div>
+
+
+
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+var precedente = -1;
+var attente    = 0;
+var img;
+var imgp;
+
+ function hidethem () {
+    img.style.visibility = 'hidden';
+    imgp.style.visibility = 'hidden';
+    attente = 0;
+}
+
+function clic (n) {
+if (attente != 1) {
+    img = document.getElementById('img'+n);
+    img.style.visibility = 'visible';
+      if (precedente<0) {
+       precedente = n;
+    } else {
+     imgp  = document.getElementById('img'+precedente);
+      if (imgp.src==img.src) {
+    } else {
+          attente = 1;
+       setTimeout('hidethem();',800);
+      }
+   precedente = -1;
+     }
+   }
+}
+</script>
+
+</html>
